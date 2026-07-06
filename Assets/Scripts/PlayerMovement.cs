@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,8 +18,15 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
+        //dont know wut this duz
+        moveInput.Normalize();
 
-        // moveInput.Normalize();
+        //Space key Testing 
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            PlayerInventory inventory = GetComponent<PlayerInventory>();
+            inventory.PrintOrgans();
+        }
     }
 
     void FixedUpdate()
