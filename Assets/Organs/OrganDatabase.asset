@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af88f3b513d8da94abd6132db9cebdeb, type: 3}
+  m_Name: OrganDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::OrganDatabase
+  allOrgans:
+  - {fileID: 11400000, guid: a87027ad9008bb14083031d6c2efe400, type: 2}
+  - {fileID: 11400000, guid: d8b0c6ff3b944b549984660dff2ab18b, type: 2}
+  - {fileID: 11400000, guid: 3d690cf96b1f8d247aa3ee74f8c52ee9, type: 2}
+  - {fileID: 11400000, guid: 2395830640cbfd943bcc373486ef2f1b, type: 2}
