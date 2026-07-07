@@ -28,13 +28,23 @@ public class OrganPickup : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag("Player")){
-            PlayerInventory inventory = collision.GetComponent<PlayerInventory>();
-            if(inventory != null){
-                bool pickedUp = inventory.Add(organ);
+            SpriteRenderer sr = GetComponent<SpriteRenderer>();
+            sr.sprite = organ.highlightIcon;
+        }
+    }
 
-                if(pickedUp){
-                    Destroy(gameObject);
-                }
+    void OnTriggerExit2D(Collider2D collision){
+        if(collision.CompareTag("Player")){
+            SpriteRenderer sr = GetComponent<SpriteRenderer>();
+            sr.sprite = organ.icon;
+        }
+    }
+
+    public void AddPickup(PlayerInventory inventory){
+        if(inventory != null){
+            bool pickedUp = inventory.Add(organ);
+            if(pickedUp){
+                Destroy(gameObject);
             }
         }
     }

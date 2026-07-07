@@ -6,5 +6,6 @@ public class OrganAsset : ScriptableObject
 {
     public string organName;
     public Sprite icon;
+    public Sprite highlightIcon;
 }
 

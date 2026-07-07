@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OrganAsset
   organName: Placeholder
   icon: {fileID: 21300000, guid: 3203d06cf98b65c438fbade78edf2e80, type: 3}
+  highlightIcon: {fileID: 21300000, guid: 16ed46ceaccf71b41931ddae05b74382, type: 3}
