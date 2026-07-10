@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5949894547881469214}
   - component: {fileID: 605270625975819353}
   - component: {fileID: 3331013142531557569}
+  - component: {fileID: 8558844582760290717}
   m_Layer: 0
   m_Name: OrganPickup
   m_TagString: Pickup
@@ -139,3 +140,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &8558844582760290717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719490387056757739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 524d3536ed0e4c74bbb6e936bccd4e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrganPickup
+  organ: {fileID: 0}
